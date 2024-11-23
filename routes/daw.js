@@ -14,6 +14,13 @@ import {
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Server Running Successfully",
+  });
+});
+
 //Admin
 router.post("/createAdmin", createAdmin);
 
